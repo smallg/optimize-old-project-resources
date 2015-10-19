@@ -59,5 +59,5 @@ gulp.task('clean-dist', function () {
 });
 
 gulp.task('build', ['clean-dist', 'minify-js', 'minify-css']);
-gulp.task('only', ['only-minify-js', 'only-minify-css']);
+gulp.task('only', ['clean-js', 'only-minify-js', 'only-minify-css']);
 gulp.task('clean', ['clean-dist', 'clean-js', 'clean-css']);
